@@ -1,0 +1,35 @@
+name: Fonctionnalité
+description: Proposer une nouvelle fonctionnalité
+labels: ["type: fonctionnalité"]
+body:
+  - type: textarea
+    id: objectif
+    attributes:
+      label: Objectif
+      description: Ce que la fonctionnalité doit permettre, du point de vue de l'utilisateur.
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      description: Les conditions à remplir pour considérer le ticket terminé.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes techniques
+      description: Pistes, contraintes, fichiers concernés (facultatif).
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      options:
+        - V1
+        - V2
+        - V3
+    validations:
+      required: true
