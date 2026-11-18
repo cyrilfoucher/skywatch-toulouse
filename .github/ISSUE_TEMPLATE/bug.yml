@@ -1,0 +1,42 @@
+name: Bug
+description: Signaler un problème
+labels: ["type: bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Ce qui ne marche pas.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduire
+    attributes:
+      label: Étapes pour reproduire
+      value: |
+        1.
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: obtenu
+    attributes:
+      label: Résultat obtenu
+      description: Message d'erreur, capture d'écran, logs.
+    validations:
+      required: true
+  - type: dropdown
+    id: environnement
+    attributes:
+      label: Environnement
+      options:
+        - Local
+        - Preview
+        - Production
+    validations:
+      required: true

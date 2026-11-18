@@ -1,0 +1,28 @@
+name: Tâche technique
+description: Configuration, outillage, tests ou documentation
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de tâche
+      options:
+        - Configuration
+        - Tests
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Ce qu'il faut faire et pourquoi.
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      value: |
+        - [ ]
+    validations:
+      required: true
