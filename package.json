@@ -8,6 +8,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check-types": "turbo run check-types",
+    "test": "turbo run test",
     "prepare": "husky"
   },
   "devDependencies": {
