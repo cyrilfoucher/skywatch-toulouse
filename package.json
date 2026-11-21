@@ -10,9 +10,10 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@typescript/native": "npm:typescript@^7.0.2",
     "prettier": "3.9.6",
     "turbo": "^2.11.11",
-    "typescript": "7.0.2"
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
   "packageManager": "pnpm@12.21.0",
   "engines": {
