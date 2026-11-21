@@ -161,3 +161,7 @@ vite.config.ts.timestamp-*
 
 # Vercel
 .vercel
+
+# Claude Code (réglages personnels)
+.claude/settings.local.json
+CLAUDE.local.md
